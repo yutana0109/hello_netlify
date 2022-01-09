@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.hero{
+background-size:cover;
+background-position: center;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+}
+.hero{
+/*   親要素がある場合 */
+  position:relative;
+  height:500px;
+}
+
+.ch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

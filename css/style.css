@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+body {
+    font-family: Yu Gothic UI, YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 14px;
+    color: #414255;
+
+}
+
+.wrap {
+    max-width: 2000px;
+
+}
+
+/*   ｈｅｄｅｒ   */
+.drawer-nav {
+    background-color: #FFFFFF;
+    height: 100px;
+}
+
+
+.drawer-menu-item {
+    vertical-align: middle;
+    /*縦方向の整列*/
+}
+
+
+.drawer-menu {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+
+}
+
+/*   ｈｅｄｅｒ終わり   */
+
+/*   メインビジュアル   */
+.mainvisual {
+    position: relative;
+    background-position: center;
+}
+
+.titleshadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*   メインビジュアル終わり   */
+
+/*   ｎ　ｄｏｏｒこだわり   */
+.pointbackground {
+    background-color: #FFF9EE;
+}
+
+.doorbackground {
+    max-width: auto;
+    height: 1090px;
+    background-image: url("../img/pc2000px/point/ndoorbackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.centerndoor {
+    text-align: center;
+    padding: 50px 0 67px;
+}
+
+.centerndoorpoint {
+    text-align: center;
+    padding: 0px 0 71px;
+}
+
+.pointall {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+
+}
+
+.pointall .point {
+    text-align: center;
+
+}
+
+.point .pointwrap {
+    width: 200px;
+    padding-top: 10px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.point .pointwrap h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.point .pointwrap p {
+    line-height: 1.3rem;
+
+}
+
+.doorbackground .peas {
+    position: absolute;
+    top: -100px;
+    flex: none;
+}
+
+.doorbackground .paprika {
+    position: absolute;
+    top: 180px;
+    right: -50px;
+    flex: none;
+}
+
+.doorbackground .broccoli {
+    position: absolute;
+    top: 380px;
+    left: 250px;
+    flex: none;
+}
+
+/*   ｎ　ｄｏｏｒこだわり終わり   */
+
+
+/*   ｍｅｎｕ   */
+.w-state {
+    max-width: auto;
+    background: url(../img/pc2000px/menu/menubackground2.png);
+    background-color: #F9F9EF;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 1088px;
+    background-position: center;
+
+}
+
+.menu__item__img.inview.-show {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menutext {
+    width: 233px;
+    padding-top: 15px;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+
+.menu__item.js-lwrap-g {
+    list-style: none;
+    float: left;
+    width: 33.3333%;
+    height: 345px;
+}
+
+/*階段のように段々にする*/
+
+.menu__item:nth-child(n + 1) {
+    /*2、5、8、11などの要素  ranslateY(距離)関数は、上下(垂直方向)の移動距離の値を指定します。*/
+    transform: translateY(40px);
+}
+
+.menu__item:nth-child(3n) {
+    /*3、6、9など３の倍数*/
+    transform: translateY(80px);
+}
+
+.menu__item:nth-child(3n+1) {
+    /*1、4、7、10などの要素*/
+    transform: translateY(0);
+}
+
+/*階段のように段々にする終わり*/
+
+
+.menu__item.js-lwrap-g figure {
+    margin: 0 auto;
+}
+
+
+.menu__n-en {
+    writing-mode: vertical-rl;
+    /*縦書き*/
+    font-size: 16px;
+    transform: translateX(-1em);
+    /*こういう使用方法はあまりしないが、縦書きが離れすぎている原因が不明な場合はいたしかたなし。*/
+}
+
+.verticalwriting {
+    display: flex;
+}
+
+.menu__n-en span {
+    font-size: 11px;
+}
+
+.menu__n-ja.js-lwrap {
+    font-size: 16px;
+}
+
+.menu__n-ja.js-lwrap .orange {
+    font-size: 12px;
+}
+
+.menu__item__body.inview.-show {
+    width: 223px;
+    line-height: 1.3rem;
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+
+.menu__p.js-lwrap {
+    font-size: 13px;
+}
+
+.flexmoney {
+    max-width: 220px;
+    display: flex;
+    border-bottom: 2px solid #414255;
+    justify-content: space-between;
+    padding-bottom: 4px;
+}
+
+/*   ｍｅｎｕ終わり   */
+
+/*   ｄｒｉｎｋ   */
+
+.coffeeall {
+    background: url(../img/pc2000px/drink/drcoffee.png);
+    max-width: auto;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height: 1079px;
+    background-position: center;
+
+}
+
+.smtearsetcbackground {
+    background: url("../img/pc2000px/drink/smoothie/smdrinkmenu.png"), url("../img/pc2000px/drink/smoothie/smtearsetc.png"), url("../img/pc2000px/drink/smoothie/smblackboard.png");
+    max-width: auto;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height: 815px;
+    position: relative;
+    background-position: center;
+
+}
+
+.tearsetc1 {
+    position: absolute;
+    top: 330px;
+    right: 830px;
+    flex: none;
+}
+
+.tearsetc2 {
+    position: absolute;
+    flex: none;
+    top: 400px;
+    right: 670px;
+}
+
+.tearsetc3 {
+    position: absolute;
+    flex: none;
+    top: 700px;
+    right: 793px;
+}
+
+/*   ｄｒｉｎｋ終わり   */
+
+/*   ｄｅｓｅｒｔ   */
+.desert {
+    height: 794px;
+    position: relative;
+    background-color: #F8F9EB;
+}
+
+.tearsetc4 {
+    position: absolute;
+    flex: none;
+    top: -50px;
+    right: 600px;
+}
+
+.detears1 {
+    position: absolute;
+    top: 30px;
+    right: 710px;
+    flex: none;
+}
+
+.detears2 {
+    position: absolute;
+    top: 90px;
+    right: 580px;
+    flex: none;
+}
+
+.deround1 {
+    position: absolute;
+    top: 190px;
+    right: 630px;
+    flex: none;
+}
+
+.deround2 {
+    position: absolute;
+    top: 230px;
+    right: 740px;
+    flex: none;
+}
+
+.deround3 {
+    position: absolute;
+    top: 500px;
+    right: 610px;
+    flex: none;
+}
+
+
+.deround4 {
+    position: absolute;
+    top: 610px;
+    right: 680px;
+    flex: none;
+}
+
+.deround5 {
+    position: absolute;
+    top: 710px;
+    right: 840px;
+    flex: none;
+}
+
+.deround6 {
+    position: absolute;
+    top: 710px;
+    right: 1000px;
+    flex: none;
+}
+
+.deround7 {
+    position: absolute;
+    top: 610px;
+    right: 1150px;
+    flex: none;
+}
+
+/*   ｄｅｓｅｒｔ終わり   */
+
+/*   ａｃｃｅｓｓ   */
+
+.access {
+    background-color: #D3EDEB;
+    position: relative;
+    margin: 0 auto;
+}
+
+.comeon {
+    position: absolute;
+    top: -80px;
+    left: 550px;
+}
+
+.lead {
+    line-height: 2.5em;
+}
+
+.map {
+    margin: 0 auto;
+    padding-top: 190px;
+    text-align: center;
+}
+
+iframe {
+    width: 1366px;
+    height: 767px;
+}
+
+.accessbackground {
+    background: url("../img/pc2000px/access/acmapline.png"), url("../img/pc2000px/access/acmapline2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1518px;
+
+}
